@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Row, Col,
-        Card, CardImg, CardText, CardBody,
-        CardTitle, CardSubtitle, Button
+        Table, Button
 } from 'reactstrap';
+import avatar from '../../assets/avatar.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default class Profile extends React.Component {
@@ -22,64 +23,104 @@ export default class Profile extends React.Component {
   render() {
     return (
       <div>
-        <Container>
-            <Row>
+        <Container fluid>
+            <Row className="m-5">
                 <Col>
-                    <p class="mt-3" > Предстоящи тестове  </p><hr/>
-                    <Row> 
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                                <CardBody>
-                                <CardTitle>Въведение в компютърните науки</CardTitle>
-                                <CardSubtitle> 20/03/2019</CardSubtitle>
-                                <CardText> За 5-7 клас </CardText>
-                                <Button color="warning">Виж</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                                <CardBody>
-                                <CardTitle>Въведение в компютърните науки</CardTitle>
-                                <CardSubtitle> 20/03/2019</CardSubtitle>
-                                <CardText> За 5-7 клас </CardText>
-                                <Button color="warning">Виж</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                    </Row>
-                    
+                    <img src={avatar} alt={"avatar"} className="avatar mx-auto" /> 
+                 </Col>
+                <Col> 
+                    <h1> Мария Иванова </h1>
+                    <h5> старши учител по информационни технологии и информатика </h5>
+                    <hr/>
+                    <Button color="secondary">Редактирай</Button>
                 </Col>
-                <Col>
-                    <p class="mt-3" > Последни уроци   </p> <hr/>
-                    <Row> 
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                                <CardBody>
-                                <CardTitle>Въведение в компютърните науки</CardTitle>
-                                <CardSubtitle> 20/03/2019</CardSubtitle>
-                                <CardText> За 5-7 клас </CardText>
-                                <Button color="warning" >Виж </Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card>
-                                <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-                                <CardBody>
-                                <CardTitle>Въведение в компютърните науки</CardTitle>
-                                <CardSubtitle> 20/03/2019</CardSubtitle>
-                                <CardText> За 5-7 клас </CardText>
-                                <Button color="warning" >Виж</Button>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                    </Row>
+                <hr/> 
+            </Row>
+            <Row className="m-3"> 
+                <Col >
+                    <Row><Col> <h2 className="text-center"> Програма за: <span className="span-text"> 20.03.2019г. </span> </h2>  </Col>  </Row> 
+                    <Table className="text-center">
+                        <thead>
+                        <tr >
+                            <th>Час</th>
+                            <th>Предмет</th>
+                            <th>Опции</th>
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>-</td>
+                            <td>
+                                <Button color="warning">
+                                
+                               <FontAwesomeIcon icon={['fas', 'fa-eye']} /> 
+                                    Справка 
+                                </Button>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>информатика</td>
+                            <td>
+                            <Button color="warning">
+                                
+                                Справка 
+                             </Button>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>-</td>
+                            <td>
+                            <Button color="warning">
+                                
+                                     Справка 
+                             </Button>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>информатика</td>
+                            <td>
+                            <Button color="warning">
+                                
+                                Справка 
+                            </Button>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>информатика</td>
+                            <td>
+                            <Button color="warning">
+                                
+                                Справка 
+                            </Button>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>информатика</td>
+                            <td>
+                            <Button color="warning">
+                                
+                                Справка 
+                            </Button>
+                            </td>
+                           
+                        </tr>
+                        </tbody>
+                    </Table>
                 </Col>
             </Row>
+
         </Container>
       </div>
     );

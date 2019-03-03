@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+import { NavLink as RRNavLink } from 'react-router-dom'; 
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -35,11 +36,15 @@ export default class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Моят профил</NavLink>
+                <NavLink exact tag={RRNavLink} to="/">Начало</NavLink>
+              </NavItem>    
+
+              <NavItem>
+                <NavLink exact tag={RRNavLink} to="/profile">Моят профил</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="/components/">Ученици</NavLink>
+                <NavLink href="/students">Ученици</NavLink>
               </NavItem>
               
               <UncontrolledDropdown nav inNavbar>
