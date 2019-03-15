@@ -52,7 +52,7 @@ export default class Header extends React.Component {
                   Домашни и уроци   
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                  <DropdownItem tag={RRNavLink} to="/homeworks">
                     Виж домашни
                   </DropdownItem>
                   <DropdownItem divider />
@@ -60,7 +60,7 @@ export default class Header extends React.Component {
                     Виж уроци 
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
+                  <DropdownItem tag={RRNavLink} to="/addhomework">
                     Добави домашна
                   </DropdownItem>
                   <DropdownItem divider />
@@ -82,11 +82,11 @@ export default class Header extends React.Component {
                   Тестове 
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                  <DropdownItem  tag={RRNavLink} to="/tests">
                     Виж тестове
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
+                  <DropdownItem  tag={RRNavLink} to="/addtest">
                     Добави тестове
                   </DropdownItem>
                   <DropdownItem divider />

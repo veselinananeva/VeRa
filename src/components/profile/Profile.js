@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default class Profile extends React.Component {
+
+
   constructor(props) {
     super(props);
 
@@ -20,6 +22,7 @@ export default class Profile extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  
   render() {
     return (
       <div>
@@ -32,7 +35,7 @@ export default class Profile extends React.Component {
                     <h1> Мария Иванова </h1>
                     <h5> старши учител по информационни технологии и информатика </h5>
                     <hr/>
-                    <Button color="secondary">Редактирай</Button>
+                    <Button color="secondary" href="/editprofile">Редактирай</Button>
                 </Col>
                 <hr/> 
             </Row>

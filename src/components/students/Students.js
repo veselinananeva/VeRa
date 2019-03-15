@@ -25,37 +25,38 @@ export default class Students extends React.Component {
         <Container fluid>
             <Row className="m-5">
                <h1> Ученици  </h1>
-               <hr/> 
+              <hr/>
+                <Button color="secondary" href="/addstudent"> Добави  <br/> ученик</Button>
             </Row>
             <Row className="mt-3">
                 <Col sm="6">
                     <Card body className="text-center">
-                    <CardTitle> <span className="span-text"> 7 А </span> клас</CardTitle>
+                    <CardTitle>  Випуск <span className="span-text">2016</span> клас</CardTitle>
                     <CardText> Паралелка с усилено изучаване на информатика  </CardText>
-                    <Button color="warning">Виж ученици</Button>
+                    <Button color="warning" href="/studentlist">Виж ученици</Button>
                     </Card>
                 </Col>
                 <Col sm="6">
                     <Card body className="text-center">
-                    <CardTitle><span className="span-text"> 8 Б  </span> клас </CardTitle>
+                    <CardTitle> Випуск <span className="span-text"> 2017 </span> клас </CardTitle>
                     <CardText> Паралелка с усилено изучаване на дизайн </CardText>
-                    <Button color="warning">Виж ученици</Button>
+                    <Button color="warning" href="/studentlist" >Виж ученици</Button>
                     </Card>
                 </Col>
             </Row>
             <Row className="mt-3">
                 <Col sm="6">
                     <Card body className="text-center">
-                    <CardTitle> <span className="span-text"> 7 А </span> клас</CardTitle>
+                    <CardTitle> Випуск <span className="span-text"> 2018</span> клас</CardTitle>
                     <CardText> Паралелка с усилено изучаване на информатика  </CardText>
-                    <Button color="warning">Виж ученици</Button>
+                    <Button color="warning" href="/studentlist" >Виж ученици</Button>
                     </Card>
                 </Col>
                 <Col sm="6">
                     <Card body className="text-center">
-                    <CardTitle><span className="span-text"> 8 Б  </span> клас </CardTitle>
+                    <CardTitle>Випуск <span className="span-text"> 2019</span> клас </CardTitle>
                     <CardText> Паралелка с усилено изучаване на дизайн </CardText>
-                    <Button color="warning">Виж ученици</Button>
+                    <Button color="warning" href="/studentlist" >Виж ученици</Button>
                     </Card>
                 </Col>
             </Row>

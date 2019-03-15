@@ -1,0 +1,33 @@
+.avatar {
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-content: center !important;
+  }
+  .span-text {
+    color: #ffc107;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  .login-container {
+    //background-image: url('./assets/background.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sign-form {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+              0 2px 4px 0 rgba(0,0,0,0.08);
+    background-color: white;
+  }
+  .test-display {
+    margin:30 px;
+    background: #f7f7f7;
+    padding:10px;
+    color: black;
+    font-size: 25px;
+  }
